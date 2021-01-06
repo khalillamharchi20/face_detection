@@ -9,4 +9,7 @@ while True:
         (x,y,w,h)=k
         cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)
     cv2.imshow('khalil',frame)
-    cv2.waitKey(1)
+    key=cv2.waitKey(1)
+    if key==81 or key==113:
+        break
+print("terminated")
